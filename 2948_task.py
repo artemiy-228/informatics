@@ -2,6 +2,11 @@
 
 n = int(input())
 h = (n // 3600)
-mm = (n % 60)
+k = h % 23
+h = h - k
+mm = (n % 3600) // 60
 ss = (n % 60)
+
+mm = ("0" + str(mm))[-2:]
+ss = ("0" + str(ss))[-2:]
 print(h, mm, ss, sep=":")

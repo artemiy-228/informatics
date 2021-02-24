@@ -4,6 +4,6 @@ h = int(input())
 a = int(input())
 b = int(input())
 
-print(((h + a) // 2) + b)
-
+res = h / (a - b)
+print(res)
 
